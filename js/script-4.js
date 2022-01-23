@@ -59,15 +59,61 @@
 
 // Вызов функции findLongestWord("The quick brown fox jumped over the lazy dog") возвращает jumped
 
-function findLongestWord(string) {
-    const words = string.split();
-    let result = words[0];
+// function findLongestWord(string) {
+//     const words = string.split();
+//     let result = words[0];
 
-    for (let i = 0; i < words.length; i += 1) {
-        if (words[i].length > result.length) {
-            result = words[i]
-        }
-    }
+//     for (let i = 0; i < words.length; i += 1) {
+//         if (words[i].length > result.length) {
+//             result = words[i]
+//         }
+//     }
     
-    return result;
+//     return result;
+// }
+
+
+
+// написать функцию которая будет принмаит объект и будет возвращать
+
+
+// function getKeys(object) {
+//     const mas = [];
+//     for (const key in object) {
+       
+//         if (object.hasOwnProperty(key)) {
+//              mas.push(key);
+//         }
+//     }
+//     return mas;
+// }
+
+// console.log(getKeys({ keyOne: 1, keyTwo: 2, keyThree: 3 }))
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// console.log(getKeys(book))
+
+
+// const java = "Java script is awesome!";
+// const result = java.toUpperCase();
+// console.log(result);
+
+// const hotelName = prompt("Please enter desired hotel name");
+// console.log(hotelName);
+
+// const value = prompt("Please enter a number!");
+// console.log(typeof value); // "string"
+// console.log(value); // "5"
+
+
+
+const max = 10;
+for (let i = 0; i < max; i += 1) {
+  console.log(`${max} % ${i} = `, max % i);
 }
