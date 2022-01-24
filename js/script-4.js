@@ -113,7 +113,27 @@
 
 
 
-const max = 10;
-for (let i = 0; i < max; i += 1) {
-  console.log(`${max} % ${i} = `, max % i);
+// const max = 10;
+// for (let i = 0; i < max; i += 1) {
+//   console.log(`${max} % ${i} = `, max % i);
+// }
+
+// const name = "Mango";
+// console.log(name.split("")); // ["M", "a", "n", "g", "o"]
+
+// const message = "JavaScript это интересно";
+// console.log(message.split("т")); // ["JavaScript", "это", "интересно"]
+
+function slugify(title) {
+  // Change code below this line
+let result = title.split(" ");
+let slug = result.join("-").toLowerCase();
+
+
+  // Change code above this line
+  return slug;
+  
+  
 }
+
+console.log(slugify("Arrays for begginers"));
