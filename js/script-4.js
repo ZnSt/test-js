@@ -124,16 +124,21 @@
 // const message = "JavaScript это интересно";
 // console.log(message.split("т")); // ["JavaScript", "это", "интересно"]
 
-function slugify(title) {
-  // Change code below this line
-let result = title.split(" ");
-let slug = result.join("-").toLowerCase();
+// function slugify(title) {
+//   // Change code below this line
+// let result = title.split(" ");
+// let slug = result.join("-").toLowerCase();
 
 
-  // Change code above this line
-  return slug;
+//   // Change code above this line
+//   return slug;
   
   
-}
+// }
 
-console.log(slugify("Arrays for begginers"));
+// console.log(slugify("Arrays for begginers"));
+
+const rgb = [200, 255, 100];
+const [red, green, blue] = rgb;
+
+console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
