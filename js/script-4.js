@@ -138,7 +138,44 @@
 
 // console.log(slugify("Arrays for begginers"));
 
-const rgb = [200, 255, 100];
-const [red, green, blue] = rgb;
+function generateStatus() {
+    const mathZ = Math.random();
+    // console.log(mathZ);
+    if (mathZ <= 0.5) {
+        return true;
+    } else {
+        return false;
+    }
+}
+// console.log(generateStatus());
+// console.log(generateStatus());
+// console.log(generateStatus());
+// console.log(generateStatus());
+// console.log(generateStatus());
 
-console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
+// function newArray(users) {
+//     const arrCopy = [];
+//     for (const user of users) {
+//         const object = {...user};
+//         object.vip = generateStatus();
+//         object.skills = 'no information';
+//         arrCopy.push(object);
+//     }
+
+//     return arrCopy;
+// }
+// console.log(newArray(users));
+// console.log(users);
+
+
+
+function addOverNum(...args) {
+  let total = 0;
+
+  for (const arg of args) {
+    total <= arg;
+  }
+
+  return total;
+  // Change code above this line
+}
