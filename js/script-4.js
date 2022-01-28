@@ -394,5 +394,178 @@
 
 // getSums([1, 2, 3, 4, 5]);
 
-const getSums = (array) => console.log(getSums([1, 2, 3, 4, 5]));
+// const getSums = (array) => console.log(getSums([1, 2, 3, 4, 5]));
 // должна вернуть - [1, 3, 6, 10, 15]
+
+// ================================================================
+
+// // Write a function that accepts an array of object and
+// returns new array of
+// values by passed key name.
+// // That function should not change the original array.
+
+// // Напишите функцию, которая принимает массив объектов и
+// возвращает новый массив
+// значения по переданному имени ключа.
+// // Эта функция не должна изменять исходный массив.
+
+// const fruits = [
+//   { name: "apple", weight: 0.5 },
+//   { name: "pineapple", weight: 2 },
+// ];
+
+// const getArrayOfKeys = (fruits, key) => fruits.map((element) => element[key]);
+
+// console.log(getArrayOfKeys(fruits, "name"));
+// returns [‘apple’, ‘pineapple’]
+
+// ============================================================================================
+
+// const first = [1, 3, 3, 4, 6, 5, 4];
+// const second = [6, 3, 5, 2, 2];
+
+// const third = [8, 13, 222, 93, 43, 11];
+// const fourth = [8, 222, 12, 93, 77, 83, 12, 43];
+
+// const getUnique = (firstArray, secondArray) => {
+//   const filteredFirstArr = firstArray.filter((elem) => !secondArray.includes(elem));
+//   const filteredSecondArr = secondArray.filter((elem) => !firstArray.includes(elem));
+//   const newArr = [...filteredFirstArr, ...filteredSecondArr];
+//   const resultNum = newArr.filter((elem, index, array) => {
+//     return array.indexOf(elem) === index;
+//   });
+//   return resultNum.sort((a, b) => a - b);
+// };
+
+// console.log(getUnique(first, second)); // [1, 2, 4]
+// console.log(getUnique(third, fourth)); // [11, 12, 13, 77, 83]
+
+// ======================================================================================================
+
+// const getSums = (array) => console.log(getSums([1, 2, 3, 4, 5]));
+// должна вернуть - [1, 3, 6, 10, 15]
+
+const users = [
+  {
+    id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    skills: ["ipsum", "lorem"],
+    gender: "male",
+    age: 37,
+  },
+  {
+    id: "7a3cbd18-57a1-4534-8e12-1caad921bda1",
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+    gender: "female",
+    age: 34,
+  },
+  {
+    id: "88beb2f3-e4c2-49f3-a0a0-ecf957a95af3",
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    skills: ["nulla", "anim", "proident", "ipsum", "elit"],
+    gender: "male",
+    age: 24,
+  },
+  {
+    id: "249b6175-5c30-44c6-b154-f120923736f5",
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    skills: ["adipisicing", "irure", "velit"],
+    gender: "female",
+    age: 21,
+  },
+  {
+    id: "334f8cb3-eb04-45e6-abf4-4935dd439b70",
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong"],
+    isActive: true,
+    balance: 3951,
+    skills: ["ex", "culpa", "nostrud"],
+    gender: "male",
+    age: 27,
+  },
+  {
+    id: "150b00fb-dd82-427d-9faf-2879ea87c695",
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: ["Jacklyn Lucas", "Linda Chapman"],
+    isActive: false,
+    balance: 1498,
+    skills: ["non", "amet", "ipsum"],
+    gender: "male",
+    age: 38,
+  },
+  {
+    id: "e1bf46ab-7168-491e-925e-f01e21394812",
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    skills: ["lorem", "veniam", "culpa"],
+    gender: "female",
+    age: 39,
+  },
+];
+
+// const allBalance = (arrUsers) => {
+//   const balance = arrUsers
+//     .filter((element) => element.age > 30)
+//     .reduce((acc, element) => {
+//       return acc + element.balance;
+//     }, 0);
+
+//   console.log(balance);
+// };
+
+// allBalance(users);
+
+// const changeKey = (users) => {
+//   return users.map((element) => {
+//     const { friends, ...newObj } = element;
+//     const bestFriend = friends[0];
+//     newObj.bestFriend = bestFriend;
+//     return newObj;
+//   });
+// };
+
+// console.log(changeKey(users));
+
+// const newArray = users.map(({ name, gender, age }) => ({ name, gender, age }));
+// console.log(newArray);
+const showThis = () => {
+  console.log("this in showThis: ", this);
+};
+
+showThis(); // this in showThis: window
+
+const user = {
+  username: "Mango",
+};
+user.showContext = showThis;
+
+user.showContext(); // this in showThis: window
