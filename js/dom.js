@@ -1,33 +1,11 @@
-const clearLogBtn = document.querySelector('[data-action="clear"]');
-const logList = document.querySelector(".log-list");
-let keypressCounter = 1;
+const refs = {
+  textRef: document.querySelector(".text"),
 
-document.addEventListener("keydown", logMessage);
-document.addEventListener("keyup", logMessage);
-clearLogBtn.addEventListener("click", reset);
+  btnRef: document.querySelector(".btn"),
+};
 
-function logMessage({ type, key, code }) {
-  const markup = `<div class="log-item">
-    <span class="chip">${keypressCounter}</span>
-    <ul>
-      <li><b>Event</b>: ${type}</li>
-      <li><b>Key</b>: ${key}</li>
-      <li><b>Code</b>: ${code}</li>
-    </ul>
-  </div>`;
+window.addEventListener("keydown", onkeypress);
 
-  logList.insertAdjacentHTML("afterbegin", markup);
-
-  if (type === "keyup") {
-    incrementKeypressCounter();
-  }
-}
-
-function reset() {
-  keypressCounter = 1;
-  logList.innerHTML = "";
-}
-
-function incrementKeypressCounter() {
-  keypressCounter += 1;
+function onkeypress(event) {
+  console.log(event);
 }
