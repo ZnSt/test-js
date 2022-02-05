@@ -1,11 +1,6 @@
-const refs = {
-  textRef: document.querySelector(".text"),
+const parent = document.querySelector("#parent");
 
-  btnRef: document.querySelector(".btn"),
-};
-
-window.addEventListener("keydown", onkeypress);
-
-function onkeypress(event) {
-  console.log(event);
-}
+parent.addEventListener("click", (event) => {
+  console.log("event.target: ", event.target);
+  console.log("event.currentTarget: ", event.currentTarget);
+});
