@@ -96,13 +96,13 @@ refs.modal.addEventListener("hide.bs.modal", () => {
   openModal();
 });
 
-function openModal(params) {
-  if (promptCounter === MAX_PROMPT_ATTEMPS) {
-    return;
-  }
-  setTimeout(() => {
-    console.log("Открываем модалку");
-    modal.show();
-    promptCounter += 1;
-  }, PROMPT_DELAY);
-}
+// function openModal(params) {
+//   if (promptCounter === MAX_PROMPT_ATTEMPS) {
+//     return;
+//   }
+//   setTimeout(() => {
+//     console.log("Открываем модалку");
+//     modal.show();
+//     promptCounter += 1;
+//   }, PROMPT_DELAY);
+// }
